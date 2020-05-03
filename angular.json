@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "EMProj"
+    }
+  },
+  "defaultProject": "EMProj",
+  "cli": {
+    "analytics": false
+  }
 }
