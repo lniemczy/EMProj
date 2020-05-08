@@ -1,0 +1,41 @@
+<div>
+  <a routerLink="/add">
+    <input class="uk-button" type="button" value="Dodaj Działanie" style="background-color: #32d296;color: white" >
+  </a>
+
+</div>
+<div class="uk-container uk-navbar-container">
+  <table class="uk-table uk-table-striped uk-table-hover uk-margin-small">
+    <thead>
+    <tr>
+      <th>ID</th>
+      <th>Opis działania</th>
+      <th>Odpowiedzialny</th>
+      <th>Komentarz</th>
+      <th>Czy aktywne?</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let todo of todos; let i = index">
+      <td>{{todo.id}}</td>
+      <td>{{todo.description}}</td>
+      <td>{{todo.responsible}}</td>
+      <td>{{todo.notes}}</td>
+      <td>
+        <span [attr.uk-icon]="todo.active ? 'check' : 'close'"></span>
+      </td>
+      <td style="width:250px">
+        <a><input class="uk-button uk-button-primary uk-margin-small" value="Dodaj komentarz" type="button"> </a>
+        <a><input class="uk-button uk-button-secondary uk-margin-small" value="Zmień priorytet" type="button"> </a>
+        <a><input class="uk-button uk-button-danger uk-margin-small" value="Zamknik działanie" type="button"
+                  style="background-color: darkblue;color: white"> </a>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+
+</div>
+
+<!--<router-outlet></router-outlet>-->
+
+
