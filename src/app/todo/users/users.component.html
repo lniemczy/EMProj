@@ -1,0 +1,38 @@
+<div>
+  <a routerLink="/addUser">
+    <input class="uk-button" type="button" value="Dodaj Użytkownika" style="background-color: #32d296;color: white" >
+  </a>
+
+</div>
+<div class="uk-container uk-navbar-container">
+  <table class="uk-table uk-table-striped uk-table-hover uk-margin-small">
+    <thead>
+    <tr>
+      <th>ID</th>
+      <th>Imię</th>
+      <th>Nazwisko</th>
+      <th>Wydział</th>
+      <th>Czy aktywny?</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let user of users; let i = index">
+      <td>{{user.id}}</td>
+      <td>{{user.firstName}}</td>
+      <td>{{user.lastName}}</td>
+      <td>{{user.department}}</td>
+      <td>
+        <span [attr.uk-icon]="user.active ? 'check' : 'close'"></span>
+      </td>
+      <td style="width:250px">
+        <a routerLink="/edit"><input class="uk-button uk-button-primary uk-margin-small" value="Edytuj"
+                                         type="button"> </a>
+        <a><input class="uk-button uk-button-danger uk-margin-small"
+                                         value="Dezaktywuj użytkownika"
+                                         type="button"> </a>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+
+</div>

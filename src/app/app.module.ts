@@ -8,6 +8,9 @@ import { AddTodoComponent } from './todo/add-todo/add-todo.component';
 import { TodoComponent } from './todo/todo.component';
 import { CommentsComponent } from './todo/comments/comments.component';
 import { PriorityComponent } from './todo/priority/priority.component';
+import { UsersComponent } from './todo/users/users.component';
+import { EditUserComponent } from './todo/edit-user/edit-user.component';
+import { AddUserComponent } from './todo/add-user/add-user.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,10 @@ import { PriorityComponent } from './todo/priority/priority.component';
     AddTodoComponent,
     TodoComponent,
     CommentsComponent,
-    PriorityComponent
+    PriorityComponent,
+    UsersComponent,
+    EditUserComponent,
+    AddUserComponent
   ],
   imports: [
     BrowserModule,
