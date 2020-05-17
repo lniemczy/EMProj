@@ -25,9 +25,11 @@
         <span [attr.uk-icon]="todo.active ? 'check' : 'close'"></span>
       </td>
       <td style="width:250px">
-        <a><input class="uk-button uk-button-primary uk-margin-small" value="Dodaj komentarz" type="button"> </a>
-        <a><input class="uk-button uk-button-secondary uk-margin-small" value="Zmień priorytet" type="button"> </a>
-        <a><input class="uk-button uk-button-danger uk-margin-small" value="Zamknik działanie" type="button"
+        <a routerLink="/comments"><input class="uk-button uk-button-primary uk-margin-small" value="Dodaj komentarz"
+                                  type="button"> </a>
+        <a routerLink="/priority"><input class="uk-button uk-button-secondary uk-margin-small" value="Zmień priorytet"
+                                 type="button"> </a>
+        <a><input class="uk-button uk-button-danger uk-margin-small" value="Zamknij działanie" type="button"
                   style="background-color: darkblue;color: white"> </a>
       </td>
     </tr>
