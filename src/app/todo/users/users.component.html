@@ -27,7 +27,7 @@
       <td style="width:250px">
         <a routerLink="/edit"><input class="uk-button uk-button-primary uk-margin-small" value="Edytuj"
                                          type="button"> </a>
-        <a><input class="uk-button uk-button-danger uk-margin-small"
+        <a><input (click)="deactivateUser()" class="uk-button uk-button-danger uk-margin-small"
                                          value="Dezaktywuj użytkownika"
                                          type="button"> </a>
       </td>

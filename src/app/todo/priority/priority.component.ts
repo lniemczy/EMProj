@@ -12,4 +12,11 @@ export class PriorityComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  saveTodo() {
+
+  }
+
+  cancelTodoChange() {
+
+  }
 }

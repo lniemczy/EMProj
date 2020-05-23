@@ -1,4 +1,4 @@
-<bold>Wybież nowy priorytet</bold><br>
+Wybież nowy priorytet<br>
 <form action="...">
   <select name="priority" size="4">
     <option>Pilne-Ważne</option>
@@ -16,5 +16,7 @@
   </form>
 </label><br>
 
-<button class="uk-button uk-button-secondary uk-margin-small" type="submit" style="margin: 5px">Zapisz zmiany</button>
-<button class="uk-button uk-button-danger uk-margin-small" type="submit" style="margin: 5px">Anuluj</button>
+<button (click)="saveTodo()" class="uk-button uk-button-primary uk-margin-small" type="submit" style="margin:
+5px">Zapisz zmiany</button>
+<button (click)="cancelTodoChange()" class="uk-button uk-button-danger uk-margin-small" type="submit"
+        style="margin: 5px">Anuluj</button>

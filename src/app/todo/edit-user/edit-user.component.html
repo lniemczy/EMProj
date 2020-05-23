@@ -1,1 +1,18 @@
-<p>edit-user works!</p>
+<label>Edytuj użytkownika:</label><hr>
+
+Imię<br>
+<textarea id="Imie" rows="4" cols="50">
+</textarea><br>
+
+Nazwisko<br>
+<textarea id="Nazwisko" rows="4" cols="50">
+</textarea><br>
+
+Wydział<br>
+<textarea id="Wydział" rows="4" cols="50">
+</textarea><br>
+
+<button (click)="saveChanges()" class="uk-button uk-button-secondary uk-margin-small" type="submit"
+         style="margin: 5px">Zapisz zmiany</button>
+<button (click)="cancel()" class="uk-button uk-button-danger uk-margin-small" type="submit" style="margin: 5px">
+  Anuluj</button>

@@ -17,4 +17,7 @@ export class ListTodoComponent implements OnInit {
     {id: 2, responsible: 'R', description: 'aaadddddddd ddddddddddddd', notes: 'notes2', active: false}
   ];
 
+  closeTodo(todo: Todo) {
+
+  }
 }

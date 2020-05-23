@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {Todo} from '../list-todo/Todo';
+/*import {Todo} from './/src/app/todo/list-todo/Todo';*/
 import {User} from './User';
 
 @Component({
@@ -10,10 +10,14 @@ import {User} from './User';
 export class UsersComponent implements OnInit {
 
   constructor() { }
-
-  ngOnInit(): void {
-  }
   users: User[] = [
     {id: 1, firstName: 'L', lastName: 'N', department: 'Production', active: true}
   ];
+
+  ngOnInit(): void {
+  }
+
+  deactivateUser() {
+
+  }
 }

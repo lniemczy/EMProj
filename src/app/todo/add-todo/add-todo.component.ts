@@ -12,4 +12,7 @@ export class AddTodoComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  addTodo() {
+
+  }
 }
