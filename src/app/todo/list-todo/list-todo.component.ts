@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {Todo} from './Todo';
+import {TaskServiceService} from '../../task-service.service';
 
 @Component({
   selector: 'app-list-todo',
@@ -8,16 +9,20 @@ import {Todo} from './Todo';
 })
 export class ListTodoComponent implements OnInit {
 
-  constructor() { }
+  constructor(private taskService: TaskServiceService) { }
 
   ngOnInit(): void {
+    this.getTodos();
   }
-  todos: Todo[] = [
-    {id: 1, responsible: 'L', description: 'blal', notes: 'notes', active: true},
-    {id: 2, responsible: 'R', description: 'aaadddddddd ddddddddddddd', notes: 'notes2', active: false}
-  ];
 
-  closeTodo(todo: Todo) {
+  todos: Todo[] = [];
 
+  getTodos(){
+    this.taskService.getTodos().subscribe(todos => this.todos = todos);
   }
+
+  closeTodo(id: number){
+    this.taskService.closeTodo(id);
+  }
+
 }
